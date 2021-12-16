@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APPS="vim lutris w3m wine openssh yay"
+APPS="vim lutris w3m wine openssh yay tmux"
 
 pacman -Syu
 
