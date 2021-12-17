@@ -1,13 +1,13 @@
 #!/bin/bash
 
-APPS="vim lutris w3m wine openssh yay tmux"
+APPS="vim lutris w3m wine openssh yay tmux base-devel"
 
-pacman -Syu
+sudo pacman -Syu --noconfirm
 
-pacman -S $APPS --noconfirm
+sudo pacman -S $APPS --noconfirm
 
-systemctl enable sshd.service
-systemctl start sshd.service
+sudo systemctl enable sshd.service
+sudo systemctl start sshd.service
 
 YAYAPPS="xboxdrv"
 
