@@ -10,8 +10,10 @@
 #                                           A
 #       DPAD_Y,DPAD_X           X2,Y2,TR
 
-sudo pkill -9 xboxdrv
+#sudo pkill -9 xboxdrv
 
-sudo xboxdrv --evdev=/dev/input/event15 -c 'TGZ Controller.xboxconf' & sudo xboxdrv --evdev=/dev/input/event31 -c 'TGZ Controller.xboxconf' & wait
+#sudo xboxdrv --evdev=/dev/input/event16 -c 'TGZ Controller.xboxconf' & sudo xboxdrv --evdev=/dev/input/event31 -c 'TGZ Controller.xboxconf' & wait
+
+xboxdrv --verbose --debug --detach-kernel-driver --dbus disabled --daemon --match product=0x181c --config 'TGZ Controller.xboxconf'
 
 # cat /proc/bus/input/devices

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APPS="vim lutris w3m wine openssh yay tmux base-devel"
+APPS="vim lutris w3m wine openssh yay tmux base-devel evtest"
 
 sudo pacman -Syu --noconfirm
 
