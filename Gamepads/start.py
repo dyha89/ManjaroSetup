@@ -1,6 +1,7 @@
 import re
 import os
 import subprocess
+import time
 
 current_dir = os.path.dirname(__file__)
 config_dir = os.path.join(current_dir, "Conf")
@@ -31,6 +32,10 @@ with open('/proc/bus/input/devices','r') as file:
 
         proc = subprocess.Popen(args)
         processes.append(proc)
+        
+        time.sleep(2)
+
+        os.remove(event_file)
 
 input("Processes started.\n")
 
@@ -42,3 +47,4 @@ for p in processes:
 
 print("Done")
 
+#mount devices back?

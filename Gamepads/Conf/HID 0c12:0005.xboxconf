@@ -3,7 +3,6 @@ silent=false
 deadzone=15000
 dpad-as-button=true
 trigger-as-button=true
-evdev=/dev/input/event15
 mimic-xpad=true
 
 [axismap]
@@ -11,18 +10,18 @@ mimic-xpad=true
 -Y2=Y2
 
 [evdev-keymap]
-BTN_SOUTH=a
-BTN_EAST=b
-BTN_NORTH=x
-BTN_WEST=y
-BTN_TL=LB
-BTN_TR=RB
-BTN_TL2=LT
-BTN_TR2=RT
-BTN_THUMBL=TL
-BTN_THUMBR=TR
-BTN_SELECT=BACK
-BTN_START=START
+BTN_TRIGGER=a
+BTN_THUMB=b
+BTN_THUMB2=x
+BTN_TOP=y
+BTN_TOP2=LB
+BTN_PINKIE=RB
+BTN_BASE=LT
+BTN_BASE2=RT
+BTN_BASE5=TL
+BTN_BASE6=TR
+BTN_BASE3=BACK
+BTN_BASE4=START
 
 [evdev-absmap]
 ABS_X=X1

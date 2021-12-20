@@ -1,0 +1,8 @@
+Buttons: A, B, X, Y, RB (frontal upper right), RT (posterior upper right), LB (frontal upper left), LT (posterior upper left), START, BACK
+Directional: DPAD_X (horizontal D-pad), DPAD_Y (vertical D-pad), X1 (left analog horizontal), Y1 (left analog vertical), X2 (right analog horizontal), Y2 (right analog vertical)
+               LT                  RT
+              LB                  RB
+                                          Y
+  X1,Y1,TL        BACK    START       X       B
+                                          A
+      DPAD_Y,DPAD_X           X2,Y2,TR
