@@ -1,0 +1,2 @@
+enconv test.txt -L polish -x utf8
+ffmpeg -itsoffset 00:00:18.000 -i test.txt test.srt
