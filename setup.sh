@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APPS="vim lutris w3m wine openssh yay tmux base-devel evtest lshw moc gnome-disk-utility ffmpeg"
+APPS="vim lutris w3m wine openssh yay tmux base-devel evtest lshw moc gnome-disk-utility ffmpeg ranger"
 
 sudo pacman -Syu --noconfirm
 
