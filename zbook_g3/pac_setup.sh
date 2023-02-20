@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APPS="vim wine wine-mono"
+APPS="vim wine wine-mono kio-gdrive"
 
 sudo pacman -Syu --noconfirm
 
