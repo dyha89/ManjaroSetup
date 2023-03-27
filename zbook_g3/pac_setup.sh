@@ -1,7 +1,16 @@
 #!/bin/bash
 
-APPS="vim wine wine-mono kio-gdrive"
+APPS="vim wine wine-mono"
+AUR_APPS="google-chrome"
 
-sudo pacman -Syu --noconfirm
+# Upgrade everything
+sudo pamac upgrade
 
-sudo pacman -S $APPS --noconfirm
+# Install packages
+sudo pamac install $APPS --no-confirm
+
+# Install AUR packages
+sudo pamac build $AUR_APPS --no-confirm
+
+# Install PIP packages
+pip install gdown
