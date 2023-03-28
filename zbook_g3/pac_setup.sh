@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APPS="vim wine wine-mono"
+APPS="vim wine wine-mono code"
 AUR_APPS="google-chrome"
 
 # Upgrade everything
@@ -13,4 +13,5 @@ sudo pamac install $APPS --no-confirm
 sudo pamac build $AUR_APPS --no-confirm
 
 # Install PIP packages
-pip install gdown
+python -m ensurepip --upgrade
+python -m pip install gdown
