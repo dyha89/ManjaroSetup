@@ -53,3 +53,10 @@ EOT
 
 # apply regedit file
 wine start regedit.exe ./reg.reg
+
+
+
+#manjaro-pipewire
+#pipewire-jack
+#wineasio
+#libcośtam pipewire jack
