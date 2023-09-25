@@ -32,31 +32,3 @@ fi
 systemctl --user daemon-reload
 systemctl --user start timidity.service
 systemctl --user enable timidity.service
-
-exit
-
-# enable midi kernel module
-cat <<EOT | sudo tee /etc/modules-load.d/snd-virmidi.conf
-snd-virmidi
-EOT
-
-sudo pacman -S winetricks
-winetricks sound=alsa
-
-# create reg file to activate midi in wine
-cat <<EOT | tee ./reg.reg
-REGEDIT4
-
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Multimedia\MIDIMap]
-"CurrentInstrument"="#1"
-EOT
-
-# apply regedit file
-wine start regedit.exe ./reg.reg
-
-
-
-#manjaro-pipewire
-#pipewire-jack
-#wineasio
-#libcośtam pipewire jack
